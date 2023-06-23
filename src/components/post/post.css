@@ -1,0 +1,180 @@
+.post{
+    width: 100%;
+    border-radius: 10px;
+
+    margin: 30px 0px;
+    background-color: white;
+
+    /* height: 300px; */
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.42); 
+    box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.42);
+}
+
+.postWrapper{
+    padding: 10px;    
+}
+
+
+
+.postTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.postTopLeft{
+    display: flex;
+    align-items: center;
+}
+
+.postProfileImg{
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.postUsername{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 10px;
+    cursor: pointer;
+
+}
+
+.postDate{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+
+
+
+/*
+          <div className="postItem">
+
+            <div className="postTop">
+              <div className="postTopLeft">
+                <img src="assets/m1.jpg" alt="" className="postProfileImg" />
+                <span className="postUsername">Andrew</span>
+                <span className="postDate">5 min ago</span>
+              </div>
+              <div className="postTopRight">
+                <MoreVert/>
+              </div>
+*/
+
+
+.postCenter{
+    margin: 20px 0;
+}
+
+.postText{
+    font-weight: 400;
+}
+
+
+.postImg{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+
+
+/*
+            <div className="postCenter">
+              <span className="postText">This is the post desc.</span>
+              <img src="assets/shutterstock_668307886.jpg" alt="" className="postImg" />
+            </div>
+
+*/
+
+
+.postBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.postBottomLeft{
+    display: flex;
+    align-items: center;
+}
+
+.postLikeCounter{
+    font-size: 15px;
+}
+
+.postCommentText{
+    cursor: pointer;
+    border-bottom: 1px ridge gray;
+    font-size: 15px;
+}
+
+
+/*
+
+            <div className="postBottom">
+              <div className="postBottomLeft">
+                <ThumbUp className="likeIcon"/>
+                <Favorite className="heartIcon"/>
+                <div className="postLikeCounter">32 people like it</div>
+              </div>
+              <div className="postBottomRight">
+                <span className="postCommentText"> 5 comments</span>
+              </div>    
+            </div>
+
+*/
+
+.makeCircularLike{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b74e4;;
+    border-radius: 15px;
+    height: 25px;
+    width: 25px;
+    margin-right: 3.5px;
+}
+
+.makeCircularHeart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(254, 69, 69);;
+    border-radius: 15px;
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+}
+
+
+
+.likeIcon{
+    color: white !important;
+    /* margin-right: 5px; */
+    cursor: pointer;
+    font-size: 15px !important;
+}
+
+
+.likeIcon_focus{
+    position: sticky !important;
+    width:32px !important;
+    height:32px !important;
+}
+
+.heartIcon{
+    color: white !important;
+    /* margin-right: 5px; */
+    font-size: 15px !important;
+    cursor: pointer;
+}

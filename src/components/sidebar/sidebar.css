@@ -1,0 +1,200 @@
+.sidebar{
+    flex: 3;
+    /* background-color: rgb(181, 255, 255); */
+    height: calc(100vh - 50px); /* top bar is 50px */
+    overflow-y: scroll;
+    position: sticky;
+    top: 50px;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(179,179,179);
+}
+
+
+.sidebarWrapper{
+    padding: 20px;
+    padding-right: 0px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.sidebarList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebarListItem{
+    align-items: center;
+    display: flex;
+    padding: 6px;
+    border-radius: 8px;
+    height: 30px;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+
+.sidebarListItem:hover{
+    background: rgb(222, 222, 222);
+}
+
+
+.sidebarIcon{
+    margin-right: 5px;
+}
+
+.sidebarListItemText{
+    font-size: 14px;
+    color: rgb(72, 72, 72);
+    font-weight: bold;
+}
+
+/* .sidebarListItemText:hover{
+    transform: scale(1.1);
+} */
+
+
+
+
+.sidebarButton{
+    /* display: flex; */
+    width: 90px;
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    /* font-weight: bold; */
+    color: white;
+    background-color: rgb(169, 169, 169);
+    cursor: pointer;
+}
+
+.sidebarButton:hover{
+    background-color: rgb(146, 146, 146);
+}
+
+
+.sidebarHr{
+    margin: 20px 0px;
+}
+
+
+.sidebarFriendList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+
+
+
+/*
+    <ul className="sidebarFriendList">
+        <li className="sidebarFriend">
+            <img src="assets/m1.jpg" alt="" className="sidebarFriendImg" />
+            <span className="sidebarFriendNmae">Friend1</span>
+*/
+
+
+
+/*
+People you may know design
+*/
+
+.newPeopleContainer{
+    margin-top: 30px;
+    /* align-items: center; */
+}
+
+.TitleBoxP{
+    display: flex;
+}
+
+.TitleBox{
+    display: flex;
+    align-self: center;
+    width: 100%;
+    height: 30px;
+    /* background-color: hsl(214, 84%, 59%); */
+    background-color: rgb(221, 220, 220);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 15px ;
+}
+
+.newPeopleContainerTitle{
+    display: flex;
+    font-weight: 500;
+    /* color: white; */
+    color: rgb(121, 121, 121);
+    font-weight: bold;
+    align-self: center !important;
+}
+
+.newPeopleWrapper{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.newPeopleItem{
+    justify-content: space-between;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    width: 100%;
+    margin-bottom: 12px;
+    /* border: 2px solid white; */
+    /* border-radius: 5px; */
+}
+
+.newPeopleItemImg{
+    width:32px; height:32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.nameAndBtn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newPeopleItemName{
+    font-weight: 500;
+    color: rgb(36, 36, 36);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.newPeopleFollowButton{
+    border: none;
+    /* display: flex; */
+    width: 60px;
+    height: 30px;
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    /* font-weight: bold; */
+    color: white;
+    background-color: rgb(32, 126, 233);
+    cursor: pointer;
+}
+
+

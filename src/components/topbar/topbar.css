@@ -1,0 +1,175 @@
+.topbarContainer{
+    height: 50px;
+    width: 100.7%;
+    background-color: hsl(214, 89%, 50%);
+    display: flex;
+    align-items: center; /* ----> Centres the items vertically */
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    margin:-10px -10px 0px -10px;
+    padding:0;
+}
+
+
+.topbarLeft{
+    flex : 3;
+}
+
+.logo{
+    font-size: 24px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.topbarCentre{
+    flex : 5;
+    /* margin-left: 40px;
+    margin-right: 10px; added by me*/
+}
+
+.searchbar{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    /* margin-left: 18px; */
+}
+
+.searchIcon{
+    font-size: 20px !important;  /* for material ui components, use !important to override its default.*/
+    margin-left: 5px;
+}
+
+.searchInput{
+    border: none;
+    width: 70%;
+    /* On click  we are getting borders, that is removed in the below class*/
+}
+
+.searchInput:focus{
+    outline: none; 
+}
+
+
+.topbarRight{
+    flex : 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    /* 3 items, consider brackets as division  and s as space [s s item1 s s item2 s s item3 s s]*/
+    color: white;
+}
+
+/* flex --  In the above example flex indicates divided part i.e topLeft is 3/12 */
+
+
+/* .topbarLinks{
+    
+} */
+
+.topbarLink{
+    margin-right: 8px;
+    margin-left: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+}
+
+.topbarIcons{
+    display: flex;
+}
+
+.topbarIconItem{
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.topbarIconBadge{
+    /* position: to; */
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.topbarImg{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+.dropdown {
+    position: relative;
+  }
+  
+.menu {
+    position: absolute;
+    list-style-type: none;
+    margin: 5px 0;
+    padding: 0;
+    right: 24px;
+    top: 12px;
+    border-radius: 6px;
+    border: 1px solid rgb(169 135 135);
+    width: 200px;
+    color: black;
+    overflow: hidden;
+    font-size: 14px;
+  }
+  
+  .menu > li {
+    margin: 0;
+    background-color: white;
+    padding-left: 12px;
+    height: 40px;
+  }
+  
+  .menu > li:hover {
+    background-color: lightgray;
+  }
+  
+  .menu > li > button {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+
+    color: black;
+  
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 5px;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+  }
+
+  .menu-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-item:hover{
+    transform: scale(1.015);/* added */
+    overflow: hidden;
+  }

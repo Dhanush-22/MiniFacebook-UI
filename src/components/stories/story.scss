@@ -1,0 +1,103 @@
+// @import "../../style.scss";
+
+.stories{
+    // @include themify($themes){
+    display: flex;
+    gap: 10px;
+    height: 250px;
+    margin-bottom: 30px ;
+    // background-color: themed("bg");
+    padding: 12px;
+    border-radius: 10px;
+    // box-shadow: 1px 8px 8px -6px rgba(0,0,0,0.57);
+    // -webkit-box-shadow: 1px 8px 8px -6px rgba(0,0,0,0.57);
+    // -moz-box-shadow: 1px 8px 8px -6px rgba(0,0,0,0.57);
+    
+    -webkit-box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.42); 
+    box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.42);
+
+    .story{
+        flex: 1;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        box-shadow: 1px 8px 8px -6px rgba(0,0,0,0.57);
+        -webkit-box-shadow: 1px 8px 8px -6px rgba(0,0,0,0.57);
+        -moz-box-shadow: 1px 8px 8px -6px rgba(0,0,0,0.57);
+        // align-items: center;
+        .createStoryImg{            
+            height: 80%;
+            width: 100%;
+            // border-radius: 10px;
+            object-fit: cover;
+            // border: 1px solid gray;
+            mix-blend-mode: normal !important;
+            // opacity: 0.85;
+            cursor: pointer;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            // border-radius: 10px;
+            object-fit: cover;
+            // border: 1px solid gray;
+            mix-blend-mode: multiply;
+            // opacity: 0.85;
+            cursor: pointer;
+            // overflow: hidden;
+        }
+        // img:hover{
+        //     mix-blend-mode: normal;
+        // }
+        .img:hover{
+            background-color: #C37500;
+            opacity:0.7 !important;
+            filter:alpha(opacity=70) !important; /* For IE8 and earlier */
+            box-shadow: 0 0 0px #000000 !important;
+        }
+        // img:hover{
+        //     opacity: 1.2;
+        // }
+        
+        span{
+            position: absolute;
+            font-weight: bold;
+            color: white;
+            bottom: 10px;
+            right: 12px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .icon{
+            position: absolute;
+            background-color: rgb(19, 103, 228);
+            border-radius: 50%;
+            bottom: 30px;
+            left: 30px;
+            border: 2px solid white;
+            width: 30px;
+            height: 30px;
+            font-size: 2px;
+            color: white;
+            cursor: pointer;
+            display: flex;
+        }
+        .createStory{
+            position: absolute;
+            font-weight: bold;
+            color: rgb(41, 41, 41);
+            bottom: 10px;
+            right: 8px;
+            text-align: center;
+            font-size: 13px;
+        }
+    }
+    .story:hover {
+        background: rgb(222, 222, 222);
+        z-index: 1;
+        transform: scale(1.005);
+    }
+}
+// }

@@ -1,0 +1,130 @@
+.share{
+    width: 100%;
+    /* height: 160px; */
+    /* background-color: aqua; */
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.42); 
+    box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.42);
+    background-color: white;
+}
+
+.shareWrapper{
+    padding: 10px;
+}
+
+.shareTop{
+    display: flex;
+    align-items: center;
+}
+
+.shareProfileImg{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.shareInput{
+    border: none;
+    width: 75%;
+}
+.shareInput:focus{
+    outline: none; 
+}
+
+.shareHr{
+    margin: 20px;
+}
+
+.shareImgContainer{
+    padding: 0 20px 10px 20px;
+    position: relative;
+}
+
+.shareImg{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.shareCancel{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+    opacity: 0.7;
+    padding: 5px;
+    font-size: 22px;
+}
+
+.shareCancel:hover{
+    opacity: 1 ;
+    font-size: 30px;
+
+}
+
+.sharebottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shareOptions{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    margin-left: 20px; /* to start under hr start point*/
+}
+
+.shareOption{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.shareOptionIcon{
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.shareOptionText{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.shareButton{
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    font-weight: 500;
+    color: white;
+    background-color: rgb(76, 76, 230);
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+/*
+<div className="share">
+<div className="shareWrapper">
+    <div className="shareTop">
+    <img src="assets/m1.jpg" alt="" className="shareProfileImg" /> 
+    <input type="text" placeholder="Post something.." className="shareInput" />
+    </div>
+    <hr className="shareHr" />
+    <div className="sharebottom">
+        <div className="shareOptions">
+            <div className="shareOption">
+                <PermMedia className="shareOptionIcon"/>
+                <span className="shareOptionText">Photo or Video</span>
+            </div>
+        </div>
+    </div>
+
+*/

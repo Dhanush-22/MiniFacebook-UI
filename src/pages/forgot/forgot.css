@@ -1,0 +1,167 @@
+.container{
+    height: 100%;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.titleBox{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* padding: 10px; */
+    padding-left: 5px;
+}
+
+.head{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    border-bottom: 2.5px solid rgb(232, 232, 232);;
+}
+            
+.title{
+    font-size: 25px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: hsl(214, 89%, 50%);
+    cursor: pointer;
+}
+
+
+
+.boxContainer{
+    height: 450px;
+    font-weight: 300px;
+    /* background-color:rgb(245, 242, 242); */
+    background-color:#e9ebee;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+
+.box{
+    height: 290px;
+    width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1.5px solid rgb(232, 232, 232);
+}
+
+.boxdiv1{
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.boxTitle{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.boxHr{
+    /* background-color: rgb(245, 242, 242) ; */
+    display: flex; 
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #ccc;
+    padding: 0;
+    width: 100%;
+}
+
+
+.boxdiv2{
+    width: 100%;
+    margin: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center; 
+}
+
+
+.boxDesc{
+    color: gray;
+    margin: 5px 20px 5px 20px;
+    font-size: 15px;
+}
+
+
+.boxdiv3{
+    width: 100%;
+    margin: 20px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center; 
+}
+
+.entry{
+    height: 30px;
+    width: 100%;
+    border: 1px solid rgb(203, 203, 203);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 20px 5px 20px;
+    display: flex;
+    align-items: center; 
+    font-size: 16px;
+}
+
+.entry:focus{
+    outline: none;
+}
+
+.boxdiv4{
+    display: flex;
+    width: 100%;
+    /* margin: 20px; */
+    /* margin-top: 10px; */
+    display: flex;
+    align-items: center; 
+    justify-content: right;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+.cancelBtn{
+    height: 38px;
+    width: 90px;
+    color: gray;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    background-color: rgb(227, 225, 225);
+    border: none;
+    cursor: pointer;
+}
+
+.cancelBtn:hover{
+    background-color: rgb(218, 218, 218);
+}
+
+.searchBtn{
+    height: 38px;
+    width: 90px;
+    background-color: rgb(11, 121, 240);
+    border-radius: 10px;
+    margin-right: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.searchBtn:hover{
+    background-color: rgb(3, 113, 232);
+}

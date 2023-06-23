@@ -1,0 +1,394 @@
+.messenger{
+    height: calc(100vh - 70px);
+    display: flex;
+    background-color: white;
+}
+.chatMenu{
+    flex: 3.2;
+    border-right: 2px solid #f0f2f5;
+    /* background-color: rgb(236, 236, 236); */
+}
+.chatBox{
+    flex:5.2;
+    border-right: 2px solid #f0f2f5;
+    /* background-color: rgb(231, 231, 194); */
+}
+
+.chatOnline{
+    flex:3;
+    /* background: pink; */
+}
+
+.chatMenuWrapper, .chatBarWrapper, .chatOnlineWrapper{
+    padding: 20px;
+    padding-bottom: 0;
+    height: 100%;
+}
+
+.chatOnlineWrapper{
+    padding-left: 10px;
+}
+
+.chatLeftTop{
+    padding-bottom: 10px;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.chatMenuIcons{
+    display: flex;
+    align-items: center;
+}
+.chatMenuIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50% !important;
+    background-color:  #f0f2f5;
+    cursor: pointer;
+}
+
+.msgsearchbar{
+    width: 100%;
+    height: 30px;
+    background-color: #f0f2f5;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.msgsearchIcon{
+    font-size: 20px !important;  /* for material ui components, use !important to override its default.*/
+    margin-left: 5px;
+}
+
+.chatSearchIcon{
+    padding-left: 10px;
+    color: gray !important;
+}
+
+.msgsearchInput{
+    padding-left: 10px;
+    border: none;
+    width: 80%;
+    background-color: #f0f2f5;
+    /* On click  we are getting borders, that is removed in the below class*/
+}
+
+.msgsearchInput:focus{
+    outline: none;
+}
+
+.msgHr{
+    margin-bottom: 10px;
+}
+
+
+.chatBoxTopProfile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #f0f2f5;
+    margin-bottom: 5px;
+}
+
+
+.chatBoxTopProfileLeft{
+    display: flex;
+    align-items: center;
+}
+
+.chatBoxTopProfileImg{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.chatBoxTopProfileName{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+.chatBoxTopProfileRightIcons{
+    display: flex;
+    align-items: center;
+}
+
+.chatBoxTopProfileRightIcon{
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50% !important;
+    background-color:  white;
+    color: hsl(214, 95%, 54%) !important;
+    cursor: pointer;
+}
+
+.chatBoxTopProfileRightIcon:hover{
+    background-color:  #eaebef;
+    /* transform: scale(1.20); */
+    overflow: hidden;
+}
+
+
+
+
+.chatFriendsList{
+    height: 80%;
+    overflow-y: scroll;
+    padding-bottom: 10px;
+    /* position: sticky; */
+}
+
+.chatBarWrapper{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-right: 0px;
+    position: relative;
+}
+
+.chatBoxTop{
+    height: 100%;
+    overflow-y: scroll;
+    position: sticky;
+    margin-bottom: 10px;
+    padding-right: 10px;
+}
+
+.chatFriendsList::-webkit-scrollbar{
+    width: 5px;
+}
+
+.chatFriendsList::-webkit-scrollbar-track{
+    background-color: #f0f2f5;
+}
+
+.chatFriendsList::-webkit-scrollbar-thumb{
+    background-color: rgb(179,179,179);
+}
+
+
+
+.chatBoxTop::-webkit-scrollbar{
+    width: 5px;
+}
+
+.chatBoxTop::-webkit-scrollbar-track{
+    background-color: #f0f2f5;
+}
+
+.chatBoxTop::-webkit-scrollbar-thumb{
+    background-color: rgb(179,179,179);
+}
+
+
+.chatBoxBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottomIcons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottomIcon{
+    margin: 3px;
+    color: hsl(214, 89%, 52%);
+    cursor: pointer;
+}
+
+.bottomIcon:hover{
+    color: hsl(214, 87%, 57%);
+    transform: scale(1.20);/* added */
+    overflow: hidden;
+}
+
+.chatMessageBox{
+    width: 70%;
+    display: flex;
+    background-color: #f0f2f5;
+    border-radius: 12px;
+    border: 1px solid black;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 0px;
+    justify-content: space-between;
+}
+
+.chatMessageInput{
+    overflow: hidden;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 10px;
+    width: 80%;
+    height: 12px;
+    background-color:#f0f2f5;;
+}
+
+.chatMessageInput:focus{
+    outline: none;
+}
+
+textarea{
+    resize: none;
+    overflow:hidden
+}
+
+.emojiIcon{
+    color: hsl(214, 89%, 52%);
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.sendButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:  hsl(214, 89%, 52%); 
+    cursor: pointer;
+    margin-right: 5px;
+}
+.sendIcon{
+    font-size: 22px !important;
+    color:white; 
+}
+
+.messageHitButton{
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(214, 89%, 52%);
+    margin-right: 15px;
+    color: white;
+    cursor: pointer;
+    height: 25px;
+    width: 50px;
+}
+
+
+.noConversation{
+    padding: 15px;
+    position: absolute;
+    top: 30%;
+    font-size: 40px;
+    color: rgb(221, 221, 221);
+    text-align: center;
+    /* align-self: center; */
+}
+
+
+/* Right bar */
+
+.friendProfileContainer{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.friendProfileWrapper{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+}
+
+
+.rightBarFrndImg{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+.rightbarFrndName{
+    margin-top: 10px;
+    font-size: 20px;
+    color: rgb(76, 76, 76);
+    font-weight: bold;
+}
+
+.rightbarFrndIcons{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 22px;
+}
+
+.rightbarFrndIcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.rightbarFrndIconBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: rgb(235, 233, 233);
+    cursor: pointer;
+}
+
+.rightbarFrndIconBox:hover{
+    background-color: rgb(206, 204, 204);
+
+}
+
+.rightbarIconName{
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 5px;
+    color: rgb(76, 76, 76);;
+}
+
+.onlineUsersContainer{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.rightBarHR{
+    display: flex;
+    padding: 0px 10px;
+}
+
+
+
+
+
+

@@ -1,0 +1,134 @@
+.rightbar{
+    flex: 3.5;
+    /* background-color: rgb(255, 238, 200); */
+    height: calc(100vh - 50px); /* top bar is 50px */
+}
+
+
+.rightbarWrapper{
+    padding: 20px 0px 0 0;
+}
+
+.rightbarFollowButton{
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(59, 59, 247);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.rightbarFollowButton:focus{
+    outline: none;
+}
+
+
+.birthdayImg{
+    height: 32px;
+    width: 32px;
+    object-fit: cover;
+    margin-right: 5px;
+}
+
+.birthdayContainer{
+    display: flex;
+    align-items: center;
+}
+
+.birthdayText{
+    color:  rgb(76, 76, 76);
+}
+
+.rightbarAd{
+    margin-top: 30px;
+    width: 80%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+
+.rightbarTitle{
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(97, 96, 96);
+}
+
+
+.rightbarFriendList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+
+/*
+          <div className="rightbarTitle">Online Friends</div>
+          <div className="rightbarFriendList">
+            <li className="rightbarFriend">
+            <div className="rightbarProfileImgContainer">
+              <img src="assets/m1.jpg" alt="" className="rightbarProfileImg"/>
+              <span className="rightbarOnline"></span>Name
+            </div>
+            </li>
+          </div>
+
+*/
+.rightbarInfo{
+    margin-bottom: 30px;
+}
+
+.rightbarInfoItem{
+    margin-bottom: 10px;
+}
+
+.rightbarInfoKey{
+    font-weight: 500;
+    margin-right: 15px;
+    color: #555;
+}
+
+.rightbarInfoValue{
+    font-weight: 300;
+}
+
+.rightbarFollowings{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+.rightbarFollowing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+
+.rightbarFollowingImg{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid white;
+    /* border-radius: px; */
+}
+
+
+.rightBarHR{
+    color: rgb(138, 137, 137);
+    margin-top: 15px;
+    width: 85%;
+    margin-bottom: 15px;
+}
