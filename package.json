@@ -46,7 +46,6 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://minifacebook-restapi.onrender.com/api",
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
