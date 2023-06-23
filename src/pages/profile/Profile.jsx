@@ -15,7 +15,7 @@ export default function Profile() {
     console.log("Username in Profile "+username);
     useEffect(()=>{
         const fetchUser = async ()=>{
-          const url = '/users?username='+ username;
+          const url = 'https://minifacebook-restapi.onrender.com/api/users?username='+ username;
           const res =  await axios.get(url);
           setUser(res.data);
         };

@@ -9,7 +9,7 @@ export default function Conversation({conversation, currUser}) {
       const friendId = conversation.members.find((m) => m != currUser._id);
       const getUser = async ()=>{
         try{
-          const res = await axios.get("/users?userId="+friendId);
+          const res = await axios.get("https://minifacebook-restapi.onrender.com/api/users?userId="+friendId);
           setUser(res.data);
         }catch(err){
           console.log("Error whil efetching user in messenger.");

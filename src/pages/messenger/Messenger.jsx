@@ -27,7 +27,8 @@ export default function Messenger() {
 
 
   useEffect(()=>{
-    socket.current = io("ws://localhost:8900");
+    // socket.current = io("ws://localhost:8900");
+    socket.current = io("wss://minifacebook-socket.onrender.com");
     socket.current.on("getMessage",data =>{
       setArrivalMsg({
         sender: data.senderId,
@@ -41,7 +42,7 @@ export default function Messenger() {
     const getUser = async ()=>{
       try{
         const receiverId = currChat.members.filter(m=> m !== user._id);
-        const res = await axios.get("/users?userId="+receiverId);
+        const res = await axios.get("https://minifacebook-restapi.onrender.com/api/users?userId="+receiverId);
         setReceiver(res.data);
       }catch(err){
         console.log(err);
@@ -69,7 +70,7 @@ export default function Messenger() {
   useEffect(()=>{
     const getConversations = async ()=>{
       try{
-        const convos = await axios.get("/conversations/633d6c58cd4d08dc29eb4f43");
+        const convos = await axios.get("https://minifacebook-restapi.onrender.com/api/conversations/633d6c58cd4d08dc29eb4f43");
         console.log(convos.data);
         setConversations(convos.data);
       }catch(err){
@@ -83,7 +84,7 @@ export default function Messenger() {
     if(currChat){
       const getMessages = async ()=>{
         try{
-          const msgs = await axios.get("/messages/"+currChat._id);
+          const msgs = await axios.get("https://minifacebook-restapi.onrender.com/api/messages/"+currChat._id);
           setMessages(msgs.data);
         }catch(err){
           console.log("Error while fetching conversations ",err);
@@ -111,7 +112,7 @@ export default function Messenger() {
     });
 
     try{
-      const res = await axios.post("/messages",message);
+      const res = await axios.post("https://minifacebook-restapi.onrender.com/api/messages",message);
       setMessages([...messages, res.data]);
       setNewMessage("");
     }catch(err){

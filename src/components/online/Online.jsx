@@ -9,7 +9,7 @@ export default function Online({userId}) {
   useState(()=>{
     const getUser = async ()=>{
       try{
-        const res = await axios.get("/users?userId="+userId);
+        const res = await axios.get("https://minifacebook-restapi.onrender.com/api/users?userId="+userId);
         setUserData(res.data);
       }catch(err){
         console.log(err);

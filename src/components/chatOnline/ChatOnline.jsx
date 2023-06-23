@@ -9,7 +9,7 @@ export default function ChatOnline({onlineUsers, currId, setCurrChat}) {
     
     const handleClick = async (user)=>{
       try{
-        const res = await axios("/conversations/find/"+user._id+"/"+currId);
+        const res = await axios("https://minifacebook-restapi.onrender.com/api/conversations/find/"+user._id+"/"+currId);
         setCurrChat(res.data);
       }catch(err){
       }
@@ -18,7 +18,7 @@ export default function ChatOnline({onlineUsers, currId, setCurrChat}) {
     useEffect(()=>{
       const getFriends = async ()=>{
         try{
-          const res = await axios.get("/users/friends/"+currId);
+          const res = await axios.get("https://minifacebook-restapi.onrender.com/api/users/friends/"+currId);
           setFriends(res.data);
         }catch(err){
           console.log("Error while fetching friends in ChatOnline.jsx ",err)

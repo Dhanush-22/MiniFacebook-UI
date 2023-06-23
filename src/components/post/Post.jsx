@@ -16,7 +16,7 @@ export default function Post({post}) {
 
   useEffect(()=>{
     const fetchUser = async ()=>{
-      const url = '/users?userId=' + post.userId;
+      const url = 'https://minifacebook-restapi.onrender.com/api/users?userId=' + post.userId;
       const res =  await axios.get(url);
       setUser(res.data);
     };
@@ -25,7 +25,7 @@ export default function Post({post}) {
 
   const likeHandler = async()=>{
     try{
-      await axios.put("/posts/"+ post._id +"/like",{userId:currUser._id});
+      await axios.put("https://minifacebook-restapi.onrender.com/api/posts/"+ post._id +"/like",{userId:currUser._id});
     }catch(err){
       console.log("Error while liking the post.."+err);
     }
