@@ -13,10 +13,10 @@ export default function Login() {
 
   const {user, isFetching, error, dispatch} = useContext(AuthContext);
 
-  const handleClick = (e)=>{
+  const handleClick = async (e)=>{
     e.preventDefault();
     console.log("Clicked");
-    loginCall(
+    await loginCall(
       {email:email.current.value, 
        password:password.current.value}
       ,dispatch);
