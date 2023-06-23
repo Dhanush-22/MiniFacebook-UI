@@ -48,7 +48,7 @@ export default function Rightbar({user}) {
     const getFriends = async ()=>{
       try{
         if(user){
-          const friendList = await axios.get("/users/friends/"+user._id);
+          const friendList = await axios.get("https://minifacebook-restapi.onrender.com/api/users/friends/"+user._id);
           setFriends(friendList.data);
         }
       }catch(err){
@@ -61,10 +61,10 @@ export default function Rightbar({user}) {
   const handleClick = async () =>{
     try{
       if(followed){
-        await axios.put("/users/"+user._id+"/unfollow",{userId:currUser._id});
+        await axios.put("https://minifacebook-restapi.onrender.com/api/users/"+user._id+"/unfollow",{userId:currUser._id});
         dispatch({type:"UNFOLLOW", payload:user._id});
       }else{
-        await axios.put("/users/"+user._id+"/follow",{userId:currUser._id});
+        await axios.put("https://minifacebook-restapi.onrender.com/api/users/"+user._id+"/follow",{userId:currUser._id});
         dispatch({type:"FOLLOW", payload:user._id});
       }
       setFollowed(!followed);
