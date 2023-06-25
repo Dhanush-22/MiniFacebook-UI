@@ -1,6 +1,7 @@
 .homeContainer{
     background-color: #f0f2f5;
+    /* background-color: cyan; */
     display: flex;
     /* justify-content: space-between; */
-    width: 100%;
+    width: 140%;
 }

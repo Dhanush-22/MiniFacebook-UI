@@ -3,9 +3,9 @@ import axios from "axios";
 export const loginCall = async (userCredential, dispatch) =>{
     dispatch({type:"LOGIN_START"});
     try{
-        console.log("Waiting for login res");
+        // console.log("Waiting for login res");
         const res = await axios.post("https://minifacebook-restapi.onrender.com/api/auth/login", userCredential);
-        console.log("Login res: ",res);
+        // console.log("Login res: ",res);
         dispatch({type:"LOGIN_SUCCESS",payload: res.data});
     }catch(err){
         dispatch({type:"LOGIN_FAILURE",payload: err});

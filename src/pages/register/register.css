@@ -205,4 +205,13 @@
         display: none;
         /* text-align: center; */
     }
+    .login{
+        width: 100vw;
+        height: 70vh;
+        /* background-color: #f0f2f5; */
+        background-color: cyan;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
