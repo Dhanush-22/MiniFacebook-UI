@@ -4,7 +4,7 @@ import { useRef } from "react";
 import {useNavigate, Link} from "react-router-dom"
 // import { loginCall } from "../../apiCalls";
 // import AuthContext from "../../context/AuthContext";
-// import "./register.css"
+import "./register.css"
 
 export default function Register() {
   const username = useRef();
