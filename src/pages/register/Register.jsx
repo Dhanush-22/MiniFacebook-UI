@@ -16,7 +16,7 @@ export default function Register() {
 
   const handleClick = async (e)=>{
     e.preventDefault();
-    console.log("Clicked....")
+    // console.log("Clicked....")
     if(passwordAgain.current.value !== password.current.value){
       passwordAgain.current.setCustomValidity("Passwords don't match.");
     }else{
@@ -79,6 +79,7 @@ export default function Register() {
               {/* </div> */}
             </form>
           </div>
+
         </div>
       </div>
   )
