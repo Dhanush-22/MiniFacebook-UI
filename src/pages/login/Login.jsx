@@ -26,14 +26,14 @@ export default function Login() {
   return (
     <>
       <div className="login">
-        <div className="loginWrapper">
+        <div className="loginWrapper loginWrapperL">
           <div className="loginLeft">
             <h3 className="loginLogo">Mini Facebook</h3>
             <span className="loginDesc">Mini Facebook helps you connect and share with the people in your life</span>
           </div>
 
           <form className="loginRight" onSubmit={handleClick}>
-            <div className="loginBox">
+            <div className="loginBox loginBoxL">
               <input 
                type="email"
                placeholder="Email address or phone number" 
@@ -54,8 +54,12 @@ export default function Login() {
                 {isFetching && <p style={{color:"red"}}>Please hold on, it may take a few second..</p>}
               </button>
               <span className="loginForgot">Forgotten password?</span>
-              <Link to="/" className="loginRegistationButton">  
-                <span className="loginRegText">{isFetching? <CircularProgress size="18px" style={{color:"white"}}/> : "Create New Account" }</span>
+              { isFetching && (
+                <span className="warningCls">Please wait for a few seconds..</span>
+              )
+              }
+              <Link to="/" className="loginRegistationButton" style={{textDecoration:"none"}}>  
+                <span >{isFetching? <CircularProgress size="18px" style={{color:"white"}}/> : "Create New Account" }</span>
               </Link>
             </div>
           </form>
