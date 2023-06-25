@@ -114,74 +114,91 @@
 }
 
 
-/* .login{
+@media only screen and (max-width: 600px) {
+    .loginWrapper{
+        width: 75%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
 
+    .loginLogo{
+        font-size: 35px;
+        font-weight: 800;
+        color: #1775ee;
+        margin-bottom: 8px;
+    }
+    
+    .loginDesc{
+        font-size: 18px;
+    }
+
+    .loginLeft{
+        justify-items: center;
+        align-items: center;
+    }
+
+    .loginBox{
+        width: 100%;
+        height: 300px;
+        /* padding: 10px; */
+        align-self: center;
+        background: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        justify-content: initial;
+        align-items: center;
+        gap: 10px;
+        justify-self: flex-start;
+    }
+
+    .loginInput{
+        width: 100%;
+        height: 30px;
+        border-radius: 10px;
+        border: 1px solid gray;
+        font-size: 10px;
+        padding-left: 15px;
+        /* width: 85%; */
+    }
+
+    .login{
+        height: 120vh;
+        display: flex;
+        align-items: normal;
+        justify-content: center;
+        background-color: #e6e6e7;
+    }
+
+    .loginButton{
+        margin-top: 20px;
+        width: 60%;
+        height: 23px;
+        font-size: 12px;
+    }
+    
+    .loginRegistationButton{
+        margin-top: 12px;
+        width: 85%;
+        height: 23px;
+        font-size: 12px;
+
+    }
 }
 
-.loginWrapper{
-    background-color: rgb(181, 249, 249);
-    display: flex;
-    align-items: center;
-    margin-top: 120px;
-    margin-bottom: 50px;
-    width: 100%;
-    height: 100%;
+
+@media only screen and (max-width: 400px) {
+    .loginLogo{
+        font-size: 30px;
+        font-weight: 800;
+        color: #1775ee;
+        margin-bottom: 8px;
+    }
+    
+    .loginDesc{
+        font-size: 15px;
+    }
 }
-
-
-.loginContainer{
-    background-color: beige;
-    margin-left: 250px;
-    margin-right: 50px;
-    display: flex;
-    align-items: center;
-}
-
-.loginLeft{
-    flex: 4;
-    margin: 40px 30px 40px 120px;
-    width: 400px;
-}
-
-.loginLogoName{
-    color: blue;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 35px;
-    font-weight: bold;
-}
-
-.loginLogoDesc{
-    font-size: 20px;
-    font-weight: 300;
-}
-
-
-.loginRight{
-    border-radius: 20px;
-    flex: 2;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    margin-right: 40px;
-}
-
-.loginUserName{
-    margin-top: 20px;
-    margin-bottom: 10px;
-    height: 45px;
-    width: 300px;
-    border: 5px gray;
-    border-radius: 10px;
-}
-
-.loginUserPswd{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    height: 45px;
-    width: 300px;
-    border-radius: 10px;
-}
-
- */
