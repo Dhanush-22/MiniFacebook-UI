@@ -51,7 +51,7 @@ export default function Login() {
                  />
               <button className="loginButton" disabled={isFetching}>
                 {isFetching? <CircularProgress size="18px" style={{color:"white"}}/> : "Log In" }
-                {isFetching && <p style={{color:"red"}}>Please hold on, it may take a few second..</p>}
+                {/* {isFetching && <p style={{color:"red"}}>Please hold on, it may take a few second..</p>} */}
               </button>
               <span className="loginForgot">Forgotten password?</span>
               { isFetching && (

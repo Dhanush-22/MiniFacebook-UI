@@ -120,8 +120,9 @@
         height: 70%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 25px;
+        /* align-items: center; */
+        justify-content: initial;
+        /* gap: 25px; */
     }
 
     .loginLogo{
@@ -132,7 +133,7 @@
     }
     
     .loginDesc{
-        font-size: 18px;
+        font-size: 12px;
     }
 
     .loginLeft{
@@ -141,7 +142,7 @@
     }
 
     .loginBox{
-        width: 100%;
+        width: 80%;
         height: 300px;
         /* padding: 10px; */
         align-self: center;
@@ -166,11 +167,12 @@
     }
 
     .login{
-        height: 120vh;
+        height: 50vh;
         display: flex;
-        align-items: normal;
+        /* align-items: normal; */
         justify-content: center;
-        background-color: #e6e6e7;
+        /* background-color: #e6e6e7; */
+        background-color: #f0f2f5;
     }
 
     .loginButton{
@@ -199,6 +201,8 @@
     }
     
     .loginDesc{
-        font-size: 15px;
+        /* font-size: 12px; */
+        display: none;
+        /* text-align: center; */
     }
 }

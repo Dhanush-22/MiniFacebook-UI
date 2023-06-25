@@ -1,6 +1,6 @@
 import "./topbar.css"
-import { Search, Person, Notifications, Chat, Settings, Feedback, HelpOutline, Logout, Help} from "@mui/icons-material"
-import { Link } from "react-router-dom"
+import { Search, Person, Notifications, Chat, Settings, Feedback, HelpOutline, Logout, Help, RememberMe} from "@mui/icons-material"
+import { Link, useNavigate } from "react-router-dom"
 import {useState, useContext } from "react"
 import AuthContext from "../../context/AuthContext"
 import { logOutCall } from "../../apiCalls";
@@ -25,6 +25,12 @@ function TopBar() {
         e.preventDefault();
         logOutCall(dispatch);
       };
+
+    const navigate = useNavigate();
+    const handlePfClick = () => {
+        // import { useNavigate } from 'react-router-dom';
+        navigate("/profile/"+user.username);
+    };
   
     return (
         <div className="topbarContainer" style={{margin:"-10px -10px 0px -10px", padding:"0"}}>
@@ -44,22 +50,24 @@ function TopBar() {
                     <Link to="/" style={{textDecoration:"none"}}>
                         <span className="topbarLink">Homepage</span>
                     </Link>
-                    <span className="topbarLink">{user.username.charAt(0).toUpperCase() + user.username.slice(1)}</span>
+                    <Link to={"/profile/"+user.username} style={{textDecoration:"none", marginLeft:"12px"}}>
+                        <span className="topbarLink">{user.username.charAt(0).toUpperCase() + user.username.slice(1)}</span>
+                    </Link>
                 </div>
                 <div className="topbarIcons">
                     <div className="topbarIconItem">
                         <Person />
-                        <span className="topbarIconBadge">1</span>
+                        {/* <span className="topbarIconBadge">1</span> */}
                     </div>
                     <div className="topbarIconItem">
                     <Link to="/messenger" style={{textDecoration:"none", color:"white"}}>
                         <Chat />
                     </Link>
-                        <span className="topbarIconBadge">2</span>
+                        {/* <span className="topbarIconBadge">2</span> */}
                     </div>
                     <div className="topbarIconItem">
                         <Notifications />
-                        <span className="topbarIconBadge">6</span>
+                        {/* <span className="topbarIconBadge">6</span> */}
                     </div>
                 </div>
                 <img 
@@ -71,6 +79,10 @@ function TopBar() {
                 <div className="dropdown">
                     {open ? (
                         <ul className="menu">
+                        <li className="menu-item">
+                            <RememberMe/>
+                            <button onClick={handlePfClick}>My Profile</button>
+                        </li>
                         <li className="menu-item">
                             <Settings/>
                             <button>Settings & Privacy</button>

@@ -388,6 +388,46 @@ textarea{
 }
 
 
+@media only screen and (max-width: 600px) {
+
+    .chatOnline{
+        display: none;
+    }
+    .chatMenu{
+        flex: 1.5;
+        border-right: 2px solid #f0f2f5;
+    /* background-color: rgb(236, 236, 236); */
+    }
+    .chatMenuWrapper{
+        padding-bottom: 20px !important;
+        padding: 10px;
+        /* padding-bottom: 0; */
+        height: 95%;
+    }
+    .chatMenuWrapper, .chatBarWrapper, .chatOnlineWrapper{
+        /* padding: 20px; */
+        padding-bottom: 0;
+        height: 95%;
+    }
+
+    .chatLeftTopTitle{
+        font-size: 15px !important; 
+    }
+    .msgsearchbar{
+        width: 100%;
+        height: 20px;
+    }
+    .msgsearchInput{
+        font-size: 10px;
+        padding-left: 4px;
+        border: none;
+        width: 80%;
+        background-color: #f0f2f5;
+        /* On click  we are getting borders, that is removed in the below class*/
+    }
+}
+
+
 
 
 

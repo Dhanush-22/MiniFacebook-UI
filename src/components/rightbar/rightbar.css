@@ -132,3 +132,11 @@
     width: 85%;
     margin-bottom: 15px;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+    .rightbar{
+        display: none;
+    }
+}
