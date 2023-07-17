@@ -10,11 +10,15 @@
         gap: 5px !important;
     }
     .warningCls{
-        color: rgb(204, 126, 77);
         font-size: 12px;
     }
 }
 
+.warningCls{
+    text-align: center;
+    justify-self: center;
+    color: rgb(204, 126, 77);
+}
 
 
 /*

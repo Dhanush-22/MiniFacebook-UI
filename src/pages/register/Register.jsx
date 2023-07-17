@@ -1,7 +1,8 @@
 import axios from "axios";
 // import { useContext } from "react";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import {useNavigate, Link} from "react-router-dom"
+import {CircularProgress} from "@mui/material" 
 // import { loginCall } from "../../apiCalls";
 // import AuthContext from "../../context/AuthContext";
 import "./register.css"
@@ -11,6 +12,7 @@ export default function Register() {
   const email = useRef();
   const password = useRef();
   const passwordAgain = useRef();
+  const [loadIcon, setLoadIcon] = useState(false); 
   // const {user, isFetching, error, dispatch} = useContext(AuthContext);
   const history = useNavigate();
 
@@ -26,7 +28,9 @@ export default function Register() {
         password:password.current.value
       }
       try{
+        setLoadIcon(true);
         const res = await axios.post("https://minifacebook-restapi.onrender.com/api/auth/register",newUser);
+        setLoadIcon(false);
         history("/login");
       }catch(err){
         console.log(err);
@@ -71,7 +75,13 @@ export default function Register() {
                 className="loginInput"
                 ref={passwordAgain}
                  />
-              <button className="loginButton" type="submit">Sign Up</button>
+              <button className="loginButton" type="submit" disabled={loadIcon}>
+                {loadIcon? <CircularProgress size="18px" style={{color:"white"}}/> : "Sign Up" }
+                { loadIcon && (
+                <span className="warningCls">Please wait for a few seconds..</span>                
+                )
+              }
+              </button>              
               {/* <div className="loginRegistationButtonD"> */}
                 <Link to="/login" className="loginRegistationButton" style={{textDecoration:"none"}}>
                   <span >Log In</span>
