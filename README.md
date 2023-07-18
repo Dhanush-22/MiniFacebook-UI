@@ -1,3 +1,6 @@
+#Server Repository: [https://github.com/Dhanush-22/MiniFacebook-API](https://github.com/Dhanush-22/MiniFacebook-API)
+#Socket Repository: [https://github.com/Dhanush-22/MiniFacebook-Socket](https://github.com/Dhanush-22/MiniFacebook-Socket)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
