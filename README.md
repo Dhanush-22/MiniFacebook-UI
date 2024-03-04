@@ -1,7 +1,7 @@
-## Live : https://dhanush-minisocialmedia.onrender.com/
-#Server Repository: [https://github.com/Dhanush-22/MiniFacebook-API](https://github.com/Dhanush-22/MiniFacebook-API).
+### Live : https://dhanush-minisocialmedia.onrender.com/
+### Server Repository: [https://github.com/Dhanush-22/MiniFacebook-API](https://github.com/Dhanush-22/MiniFacebook-API).
 
-#Socket Repository: [https://github.com/Dhanush-22/MiniFacebook-Socket](https://github.com/Dhanush-22/MiniFacebook-Socket).
+### Socket Repository: [https://github.com/Dhanush-22/MiniFacebook-Socket](https://github.com/Dhanush-22/MiniFacebook-Socket).
 
 # Getting Started with Create React App
 
